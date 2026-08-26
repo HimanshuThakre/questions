@@ -1,17 +1,25 @@
-#include <cmath>
-#include <cstdio>
-#include <vector>
 #include <iostream>
-#include <algorithm>
+#include <cstdio>
 using namespace std;
 
+/*
+Add `int max_of_four(int a, int b, int c, int d)` here.
+*/
 
 int main() {
-    int a, b, c;
-    cin >> a >> b >> c ;
-    cout << a+b+c << endl;
+    int a, b, c, d;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    if(a>b){
+        cout << a;
+    }else if (b>c){
+        cout << b;
+    }else if (c>d){
+        cout << c;
+    }else{
+        cout << d;
+    }
+    
    
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
     return 0;
 }
 
